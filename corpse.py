@@ -59,14 +59,14 @@ def name():
 	return render_template("name.html", 
 		name = name,
 		form = form)
- 
- #DOXING PAGE
+  
+#Doxing
 @app.route('/doxing')
 def doxing():
 	doctor_name = "Ripper"
 	morgue = "Serial Morgue"
 
-	serial_corpse  = ["African", "Asian", "Caucasian", "Latino", 00]
+	serial_corpse  = ["Autopsy", "Murder", "Natural", "Disease", 00]
 	return render_template("doxing.html", 
 		doctor_name=doctor_name,
 		morgue=morgue,
