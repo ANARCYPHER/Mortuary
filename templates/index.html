@@ -2,6 +2,29 @@
 
 {% block content %}
 
-<h1>INDEX*</h1>
+	<h1>INDEX!</h1>
+
+	<p>VIRTUAL MORGUE</p>
+
+	<p>My name is {{ first_name }}</p>
+
+	<p>{{ stuff|title }}</p>
+
+	<h3>Corpse by Race:</h3>
+
+	{% for topping in human_corpse %}
+		
+		{% if topping == 41 %}
+			{{ topping + 100 }}<br/>
+		{% else %}
+			{{ topping }}<br/>
+		{% endif %}
+
+		
+	{% endfor %}
+
+	<br/><br/>
+	
+
 
 {% endblock %}

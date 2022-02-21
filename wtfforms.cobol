@@ -15,20 +15,8 @@ class NamerForm(FlaskForm):
 #Routes
 @app.route('/')
 
-#def index():
-		#return render_template("index.html")
-  
-@app.route('/')
 def index():
-	first_name = "Ripper"
-	stuff = "This is Stuff"
-
-	human_corpse  = ["African", "Asian", "Caucasian", "Latino", 00]
-	return render_template("index.html", 
-		first_name=first_name,
-		stuff=stuff,
-		human_corpse=human_corpse,)
-  
+		return render_template("index.html")
 
 @app.route('/user/<name>')
 
